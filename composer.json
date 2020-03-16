@@ -3,6 +3,6 @@
         "sculpin/sculpin": "^3.0"
     },
     "scripts": {
-        "serve": "rm -rf output_dev/ && npx tailwindcss build src/css/main.css -o source/css/output.css && vendor/bin/sculpin generate --watch --server"
+        "serve": "rm -rf output_dev/; npx tailwindcss build src/css/main.css -o source/css/output.css && vendor/bin/sculpin generate --watch --server"
     }
 }
