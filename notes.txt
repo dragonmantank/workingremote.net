@@ -1,0 +1,7 @@
+## Color Scheme
+https://coolors.co/75dddd-508991-172a3a-004346-09bc8a
+75dddd
+508991 - Borders
+172a3a - Header
+004346
+09bc8a

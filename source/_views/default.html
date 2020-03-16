@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>{{site.title}}</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <script src="https://kit.fontawesome.com/9d3f2e45ca.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <nav class="navbar mb-4">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <svg class="fill-current h-8 w-8 mr-2" width="64" height="54" viewBox="0 0 64 54"xmlns="http://www.w3.org/2000/svg"><path d="m62 17h-60c-.552 0-1 .448-1 1v4c0 .552.448 1 1 1v26c0 .552.448 1 1 1h3c.552 0 1-.448 1-1v-26h33v26c0 .552.448 1 1 1h20c.552 0 1-.448 1-1v-26c.552 0 1-.448 1-1v-4c0-.552-.448-1-1-1zm-59 2h58v2h-58zm2 29h-1v-25h1zm55-9h-18v-7h18zm0 9h-18v-7h18zm0-18h-18v-7h18z"/><path d="m48 27h6c.552 0 1-.448 1-1s-.448-1-1-1h-6c-.552 0-1 .448-1 1s.448 1 1 1z"/><path d="m48 36h6c.552 0 1-.448 1-1s-.448-1-1-1h-6c-.552 0-1 .448-1 1s.448 1 1 1z"/><path d="m48 45h6c.552 0 1-.448 1-1s-.448-1-1-1h-6c-.552 0-1 .448-1 1s.448 1 1 1z"/><circle cx="57" cy="35.003" r=".997"/></svg>
+            <span class="font-semibold text-xl tracking-tight"><a href="/" class="text-white">{{site.title}}</a></span>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+    {% block content_wrapper %}
+        {% block content '' %}
+    {% endblock content_wrapper %}
+    </main>
+
+    <footer class="border-t-2 border-gray-500 bg-white">
+        <div class="grid grid-cols-3 gap-4">
+            <div>
+                WorkingRemote.net is a collaborative effort to help people get adjusted to working from home. If you would like to contribute, please visit us over at <a href="https://github.com/dragonmantank/workingremote.net">Github</a> and provide either an issue with links to things you find helpful, or fork our website and submit a Pull Request with written content.
+                <p class="text-xs">Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            </div>
+            <div></div>
+            <div class="text-right">
+                <ul>
+                    <li><a href="https://github.com/dragonmantank/workingremote.net" class="text-2xl"><i class="fab fa-github-square"></i></a></li>
+                    <li><a href="https://twitter.com/dragonmantank" class="text-2xl"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
